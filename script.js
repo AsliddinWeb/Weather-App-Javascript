@@ -21,6 +21,10 @@ function getResults (query) {
     }).then(displayResults)
 }
 
+let now = new Date()
+    let date = document.querySelector(".date")
+    date.textContent = dataBuilder(now)
+
 function displayResults (weather) {
     console.log(weather);
 
@@ -58,16 +62,16 @@ function dataBuilder (a) {
     ];
 
     let days = [
+        "Yakshanba",
         "Dushanba",
         "Seshanba",
         "Chorshanba",
         "Payshanba",
         "Juma",
-        "Shanba",
-        "Yakshanba"
+        "Shanba"
     ];
 
-    let day = days[a.getDay() - 1];
+    let day = days[a.getDay()];
     let date = a.getDate();
     let month = months[a.getMonth()];
     let year = a.getFullYear();
