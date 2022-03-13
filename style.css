@@ -99,4 +99,13 @@ main {
     .app-wrap {
         grid-template-columns: 100%;
     }
+
+    main {
+        margin-top: 10vh;
+    }
+
+    header {
+        display: block;
+        margin: 0 auto;
+    }
 }
