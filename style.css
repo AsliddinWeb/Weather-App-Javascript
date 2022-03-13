@@ -102,10 +102,13 @@ main {
 
     main {
         margin-top: 10vh;
+        padding: 25px 0 0 0;
+        margin-bottom: 0;
     }
 
     header {
         display: block;
         margin: 0 auto;
+        padding: 0 15px;
     }
 }
